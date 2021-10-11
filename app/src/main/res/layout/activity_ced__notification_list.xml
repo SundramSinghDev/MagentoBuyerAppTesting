@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/category_section"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/search_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/notification_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/pad_10dp"
+            android:gravity="start"
+            android:lineSpacingExtra="-4.3sp"
+            android:text="@string/my_notifications"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="@dimen/txt_subheading15"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/notification_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pad_5dp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@+id/notification_title" />
+
+        <RelativeLayout
+            android:id="@+id/no_notificationlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/conti"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/celias_regular"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/looks_like_you_don_t_have_any_notications_yet"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_12sp" />
+
+            <TextView
+                android:id="@+id/conti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/secondary_box"
+                android:fontFamily="@font/celias_regular"
+                android:gravity="center"
+                android:minHeight="40dp"
+                android:padding="@dimen/pad_10dp"
+                android:text="@string/continueshopping"
+                android:textAllCaps="true"
+                android:textColor="@color/txtsecondory_color"
+                android:textSize="@dimen/txt_12sp" />
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

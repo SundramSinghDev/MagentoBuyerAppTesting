@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "56926442714",
+    "firebase_url": "https://magentotwo-9c546.firebaseio.com",
+    "project_id": "magentotwo-9c546",
+    "storage_bucket": "magentotwo-9c546.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56926442714:android:995f507ce61b0c04",
+        "android_client_info": {
+          "package_name": "com.magentotwo.magenativeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "56926442714-2i4169hqf56527keuq0qo095tt68pasc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.magentotwo.magenativeapp",
+            "certificate_hash": "54bd5ad24f62eb67e282d50e616dcff9ac45a9e8"
+          }
+        },
+        {
+          "client_id": "56926442714-ej5tcj0032l6t98m4edk9mgko2c41lsu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFYbdRiY1E8wzQTni2MQ5po_uuB125XHA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "56926442714-ej5tcj0032l6t98m4edk9mgko2c41lsu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "56926442714-um069rcdqijj8uin1j19i75pdc1aopoa.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.cedcommerce.magenativemagentotwo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
